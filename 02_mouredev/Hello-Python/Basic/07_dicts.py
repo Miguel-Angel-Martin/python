@@ -10,15 +10,17 @@ my_other_dict = {}
 print(type(my_dict))
 print(type(my_other_dict))
 
-my_other_dict = {"Nombre":"Brais", "Apellido":"Moure", "Edad":35, 1:"Python"}
+my_other_dict = {"Name": "Michael",
+                 "Surname": "Brown", "Age": 35, 1: "Python"}
+
 
 my_dict = {
-    "Nombre":"Brais",
-    "Apellido":"Moure",
-    "Edad":35,
-    "Lenguajes": {"Python","Swift", "Kotlin"},
-    1:1.77
-    }
+    "Name": "Michael",
+    "Surname": "Brown",
+    "Age": 35,
+    "Languages": {"Python", "Swift", "Kotlin"},
+    1: 1.77
+}
 
 print(my_other_dict)
 print(my_dict)
@@ -29,11 +31,12 @@ print(len(my_dict))
 # Búsqueda
 
 print(my_dict[1])
-print(my_dict["Nombre"])
+print(my_dict["Name"])
+print (my_dict["Languages"])
+print("Brown" in my_dict)
+print("Surname" in my_dict)
 
-print("Moure" in my_dict)
-print("Apellido" in my_dict)
-
+'''
 # Inserción
 
 my_dict["Calle"] = "Calle MoureDev"
@@ -73,3 +76,32 @@ print(my_new_dict.values())
 print(list(dict.fromkeys(list(my_new_dict.values())).keys()))
 print(tuple(my_new_dict))
 print(set(my_new_dict))
+'''
+
+
+'''Dictionaries inside dictionaries'''
+
+dictionary = {'key' : 'value',
+'key_2': 'value_2'}
+
+nested_dict = { 'dictA': {'key_1': 'value_1'},
+                'dictB': {'key_2': 'value_2'}}
+
+people = {1: {'name': 'John', 'age': '27', 'sex': 'Male'},
+          2: {'name': 'Marie', 'age': '22', 'sex': 'Female'}}
+
+print(people[1]['name'])
+print(people[1]['age'])
+print(people[1]['sex'])
+
+people = {1: {'name': 'John', 'age': '27', 'sex': 'Male'},
+          2: {'name': 'Marie', 'age': '22', 'sex': 'Female'}}
+
+people[3] = {}
+
+people[3]['name'] = 'Luna'
+people[3]['age'] = '24'
+people[3]['sex'] = 'Female'
+people[3]['married'] = 'No'
+
+print(people[3])
