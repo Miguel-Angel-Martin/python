@@ -8,7 +8,7 @@ show_pattern()
 
 
 def welcome(name):
-    print(f"Hello!, {name}!")
+    print(f" 👋  Hello!, {name}!")
 
 
 welcome("Miguel")
