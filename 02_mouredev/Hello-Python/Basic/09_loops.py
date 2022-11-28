@@ -44,7 +44,7 @@ my_dict = {"Nombre":"Brais", "Apellido":"Moure", "Edad":35, 1:"Python"}
 
 for element in my_dict:
     print(element)
-    if element == "Edad":
+    if element == "Age":
         break
 else:
     print("El bluce for para diccionario ha finalizado")

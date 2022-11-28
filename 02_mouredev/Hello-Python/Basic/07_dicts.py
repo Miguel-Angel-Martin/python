@@ -36,38 +36,38 @@ print (my_dict["Languages"])
 print("Brown" in my_dict)
 print("Surname" in my_dict)
 
-'''
-# Inserción
 
-my_dict["Calle"] = "Calle MoureDev"
+# Insert
+
+my_dict["Street"] = "Street Fish"
 print(my_dict)
 
-# Actualización
+# Update
 
-my_dict["Nombre"] = "Pedro"
-print(my_dict["Nombre"])
+my_dict["Name"] = "Pedro"
+print(my_dict["Name"])
 
-# Eliminación
+# Delete
 
-del my_dict["Calle"]
+del my_dict["Street"]
 print(my_dict)
 
-# Otras operaciones
+# Other operations
 
 print(my_dict.items())
 print(my_dict.keys())
 print(my_dict.values())
 
-my_list = ["Nombre", 1, "Piso"]
+my_list = ["Name", 1, "Story"]
 
 my_new_dict = dict.fromkeys((my_list))
 print(my_new_dict)
-my_new_dict = dict.fromkeys(("Nombre", 1, "Piso"))
-print((my_new_dict))
+my_new_dict = dict.fromkeys(("Name", 1, "Story"))
+print('fromkeys: ',(my_new_dict))
 my_new_dict = dict.fromkeys(my_dict)
-print((my_new_dict))
-my_new_dict = dict.fromkeys(my_dict, "MoureDev")
-print((my_new_dict))
+print('fromkeys: ',(my_new_dict))
+my_new_dict = dict.fromkeys(my_dict, "Fish")
+print('fromkeys: ',(my_new_dict))
 
 my_values = my_new_dict.values()
 print(type(my_values))
@@ -76,10 +76,10 @@ print(my_new_dict.values())
 print(list(dict.fromkeys(list(my_new_dict.values())).keys()))
 print(tuple(my_new_dict))
 print(set(my_new_dict))
-'''
 
 
-'''Dictionaries inside dictionaries'''
+
+#Dictionaries inside dictionaries
 
 dictionary = {'key' : 'value',
 'key_2': 'value_2'}
