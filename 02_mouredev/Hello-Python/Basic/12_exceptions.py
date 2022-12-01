@@ -1,50 +1,48 @@
-# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=32030
+'''exceptions'''
+# https://youtu.be/Kp4Mvapo5kc?t=32030
 
 ### Exception Handling ###
 
-numberOne = 5
-numberTwo = 1
-numberTwo = "1"
+NUMBER_ONE = 5
+NUMBER_TWO = 1
+NUMBER_TWO = "1"
+EXCEPTION = "EXCEPTION "
 
-# Excepción base: try except
-
-try:
-    print(numberOne + numberTwo)
-    print("No se ha producido un error")
-except:
-    # Se ejecuta si se produce una excepción
-    print("Se ha producido un error")
-
-# Flujo completo de una excepción: try except else finally
+# Exception base: try except
 
 try:
-    print(numberOne + numberTwo)
-    print("No se ha producido un error")
-except:
-    print("Se ha producido un error")
-else: # Opcional
-    # Se ejecuta si no se produce una excepción
-    print("La ejecución continúa correctamente")
-finally: # Opcional
-    # Se ejecuta siempre
-    print("La ejecución continúa")
-
-# Excepciones por tipo
+    print(NUMBER_ONE + NUMBER_TWO)
+    print("all works perfectly")
+except TypeError as type_error:
+    print("There is an "+EXCEPTION + ": " +
+          str(type_error) + ".In addition operation")
 
 try:
-    print(numberOne + numberTwo)
-    print("No se ha producido un error")
-except ValueError:
-    print("Se ha producido un ValueError")
+    print(NUMBER_ONE + NUMBER_TWO)
+    print("all works perfectly 2")
 except TypeError:
-    print("Se ha producido un TypeError")
+    print("There is some error in addition 2")
+else:
+    print("The execution continues correctly.")
+finally:  # this sentence executing always
+    print("The execution continues correctly: finally.")
 
-# Captura de la información de la excepción
 
 try:
-    print(numberOne + numberTwo)
-    print("No se ha producido un error")
+    print(NUMBER_ONE + NUMBER_TWO)
+    print("There is some error in addition 3")
+except ValueError:
+    print("There is some error in addition 3 value error")
+except TypeError:
+    print("There is some error in addition 3 type error")
+
+
+try:
+    print(NUMBER_ONE + NUMBER_TWO)
+    print("There is some error in addition 4")
 except ValueError as error:
-    print(error)
-except Exception as my_random_error_name:
-    print(my_random_error_name)
+    print("There is some error in addition 4: ", error)
+except TypeError as my_random_error_name:
+    print("Error description: ", my_random_error_name)
+except ArithmeticError as my_random_error_name:
+    print("Error description: ", my_random_error_name)

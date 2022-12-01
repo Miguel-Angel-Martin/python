@@ -1,3 +1,6 @@
 {
-  "cSpell.words": ["OSSU", "Spyder"]
+  
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintPath":"/home/miguel/.pyenv/versions/dev-env/lib/python3.11/site-packages/pylint",
 }
