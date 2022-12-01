@@ -26,7 +26,7 @@ print(numpy_array * 2)
 # pip install requests
 
 
-response = requests.get("https://pokeapi.co/api/v2/pokemon?limit=151")
+response = requests.get("https://pokeapi.co/api/v2/pokemon?limit=3")
 print(response)
 print(response.status_code)
 print(response.json())

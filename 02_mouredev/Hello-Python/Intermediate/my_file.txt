@@ -1,6 +1,6 @@
-Mi nombre es Brais
-Mi apellido es Moure
-35 años
-Y mi lenguaje preferido es Python
-Aunque también me gusta Kotlin
-Y Swift
+My name is Miguel
+Mi surname is Martin
+I'm 44 years old
+And my favorite language is Python
+Although I like very much JS
+Y C#
