@@ -13,13 +13,26 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
 
 def longest(a1, a2):
-    '''longest string '''
+    """_summary_
+
+    Args:
+        a1 (_type_): first string
+        a2 (_type_): second string to compare
+
+    Returns:
+        _type_: Return a new sorted string, the longest possible, containing distinct letters
+    """
     result = ""
-    if len(a1) > len(a2):
-        result = a1
-    else:
-        result = a2
-    return result
+    for x in a1:
+        if x not in result:
+            result = result + x
+    for x in a2:
+        if x not in result:
+            result = result + x
+    return ''.join(sorted(result))
+
+# def longest(s1, s2):
+#     return ''.join(sorted((set(s1+s2))))
 
 
 a = "xyaabbbccccdef"
