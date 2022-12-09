@@ -18,5 +18,7 @@ def solution(n):
             roman_string += roman_numerals[key]
             n -= key
     return roman_string
-number= 20
-print (solution(number))
+
+
+number = 1990
+print(solution(number))
